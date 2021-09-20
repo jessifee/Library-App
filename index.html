@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display">Book List</h1>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+
+      <div class="button">
+        <button class="add-book">Add a book to the list</button>
+      </div>
+      <div class="added-message hidden">
+        <p id="added-message">Book has been added</p>
+      </div>
+      <div class="removed-message hidden">
+        <p id="removed-message">Book has been removed</p>
+      </div>
+      <div class="hidden" id="form-div">
+        <form id="book-form">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" />
+          </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" id="author" />
+          </div>
+          <div class="form-group">
+            <label for="pages">Pages</label>
+            <input type="text" id="pages" />
+          </div>
+          <input type="submit" value="submit" id="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
